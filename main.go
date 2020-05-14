@@ -19,7 +19,7 @@ func main() {
 func onReady() {
 	systray.SetTemplateIcon(icon.Photonicon, icon.Photonicon)
 	systray.SetTooltip("Photon Explorer")
-	systray.SetTitle("Photon Explorer")
+	systray.SetTitle("")
 	open := systray.AddMenuItem("Open in browser", "Open Photon Explorer in your browser")
 	quit := systray.AddMenuItem("Quit", "Quit Photon Explorer")
 	go func() {
