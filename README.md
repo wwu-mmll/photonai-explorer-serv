@@ -6,7 +6,7 @@ Because of https://github.com/getlantern/systray it seems to not be compatible w
 ## Windows only
 `go get github.com/akavel/rsrc`
  
-
+# Building
 ## Linux
 1. put Website in dist/ directory 
 2. `packr`
