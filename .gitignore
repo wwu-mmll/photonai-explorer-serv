@@ -22,3 +22,4 @@ rsrc.syso
 photon_explorer
 
 .idea/
+.build-mac/Photon Explorer.app/.DS_Store
