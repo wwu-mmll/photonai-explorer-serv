@@ -18,3 +18,4 @@ Because of https://github.com/getlantern/systray it seems to not be compatible w
 3. `rsrc -manifest photon_explorer.manifest`
 4. `go build -ldflags="-H windowsgui" -o photon_explorer.exe .`
     * for cross-compilation: `env GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui" -o photon_explorer.exe .` 
+    * Be advised when cross-compiling: the create rsrc.syso can interfer with the building process when creating a linux binary
