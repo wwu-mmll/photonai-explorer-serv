@@ -28,12 +28,14 @@ func onReady() {
 		os.Exit(0)
 	}()
 	go func() {
-		<-open.ClickedCh
-		time.Sleep(100 * time.Millisecond)
-		// TODO: check on which port this is running
-		err := browser.OpenURL("http://localhost:3000")
-		if err != nil {
-			log.Fatal(err)
+		for {
+			<-open.ClickedCh
+			time.Sleep(100 * time.Millisecond)
+			// TODO: check on which port this is running
+			err := browser.OpenURL("http://localhost:3000")
+			if err != nil {
+				log.Fatal(err)
+			}
 		}
 	}()
 	startServer()
