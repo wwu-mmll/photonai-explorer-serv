@@ -13,7 +13,7 @@ import (
 
 func main() {
 	// TODO: check if other instance of photon_explorer_serv is already running and if so just open browser
-	systray.RunWithAppWindow("Photon Explorer", 1024, 768, onReady, onExit)
+	systray.Run(onReady, onExit)
 }
 
 func onReady() {
