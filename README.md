@@ -5,6 +5,9 @@ Because of https://github.com/getlantern/systray it seems to not be compatible w
 `go get -u github.com/gobuffalo/packr/packr`
 ## Windows only
 `go get github.com/akavel/rsrc`
+## Linux only
+`sudo apt-get install gcc libgtk-3-dev libappindicator3-dev`
+On Linux Mint, `libxapp-dev` is also required.
  
 # Building
 ## Linux
