@@ -1,4 +1,4 @@
-# build
+# PHOTONAI Explorer - build instructions
 Because of https://github.com/getlantern/systray it seems to not be compatible with cross-compiling. See this repo for prerequisites.
 
 # Building requirements
@@ -13,12 +13,12 @@ On Linux Mint, `libxapp-dev` is also required.
 ## Linux
 1. put Website in dist/ directory 
 2. `packr`
-3. `go build -o photon_explorer .`
+3. `go build -o photonai_explorer .`
 
 ## Windows (also crosscompilation)
 1. put Website in dist/ directory 
 2. `packr`
-3. `rsrc -manifest photon_explorer.manifest`
-4. `go build -ldflags="-H windowsgui" -o photon_explorer.exe .`
-    * for cross-compilation: `env GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui" -o photon_explorer.exe .` 
+3. `rsrc -manifest photonai_explorer.manifest`
+4. `go build -ldflags="-H windowsgui" -o photonai_explorer.exe .`
+    * for cross-compilation: `env GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui" -o photonai_explorer.exe .` 
     * Be advised when cross-compiling: the create rsrc.syso can interfer with the building process when creating a linux binary
