@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"photon_explorer_serv/icon"
+	"photonai_explorer_serv/icon"
 	"time"
 )
 
@@ -18,7 +18,7 @@ func main() {
 
 func onReady() {
 	systray.SetTemplateIcon(icon.Photonicon, icon.Photonicon)
-	systray.SetTooltip("Photon Explorer")
+	systray.SetTooltip("PHOTONAI Explorer")
 	systray.SetTitle("")
 	open := systray.AddMenuItem("Open in browser", "Open Photon Explorer in your browser")
 	quit := systray.AddMenuItem("Quit", "Quit Photon Explorer")

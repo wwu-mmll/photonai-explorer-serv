@@ -1,4 +1,4 @@
-module photon_explorer_serv
+module photonai_explorer_serv
 
 go 1.14
 

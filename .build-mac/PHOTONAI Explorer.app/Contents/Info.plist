@@ -2,12 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>CFBundleName</key>
+	<string>PHOTONAI Explorer</string>
+	<key>CFBundleGetInfoString</key>
+    <string>__UNSTABLE_BUILD__</string>
+    <key>CFBundleShortVersionString</key>
+    <string>__UNSTABLE_BUILD__</string>
 	<key>CFBundleExecutable</key>
-	<string>photon_explorer_mac</string>
+	<string>photonai_explorer_mac</string>
 	<key>CFBundleIconFile</key>
 	<string>icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.uni-muenster.photon.explorer</string>
+	<string>de.uni-muenster.photonai.explorer</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>LSUIElement</key>
